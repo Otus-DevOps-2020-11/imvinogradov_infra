@@ -22,3 +22,10 @@ imvinogradov Infra repository
  IP серверов:
 bastion_IP = 178.154.231.17
 someinternalhost_IP = 10.130.0.11
+
+## Домашняя работа №6
+ ### Деплой тестового приложения
+
+ ```
+ testapp_IP = 178.154.225.231
+ testapp_port = 9292
