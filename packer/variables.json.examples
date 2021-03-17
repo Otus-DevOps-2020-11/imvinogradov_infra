@@ -1,0 +1,7 @@
+{
+   "folder_id": "b1go7vf6l1878aa27v8u",
+   "source_image_family": "ubuntu-1604-lts",
+   "path_to_keys_file": "/Users/yandex-cloud/key.json",
+   "ssh_username": "ubuntu",
+   "zone_a": "ru-central1-a",
+}
