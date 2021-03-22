@@ -1,0 +1,34 @@
+{
+  "builders": [
+    {
+      "type": "yandex",
+      "service_account_key_file": "{{user `path_to_keys_file`}}",
+      "folder_id": "{{user `folder_id`}}",
+      "source_image_family": "ubuntu-1604-lts",
+      "use_ipv4_nat": "true",
+      "zone": "{{user `zone_a`}}",
+      "image_name": "reddit-base-{{timestamp}}",
+      "image_family": "reddit-base",
+      "ssh_username": "{{user `ssh_username`}}",
+      "platform_id": "standard-v1"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "sudo apt update -y"
+      ]
+    },
+    {
+      "type": "shell",
+      "script": "scripts/install_ruby.sh",
+      "execute_command": "sudo {{.Path}}"
+    },
+    {
+      "type": "shell",
+      "script": "scripts/install_mongodb.sh",
+      "execute_command": "sudo {{.Path}}"
+    }
+  ]
+}
