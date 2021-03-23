@@ -1,0 +1,8 @@
+token     = "AgAAAAAY-345ENNAATu123234wTmn857JSE35OfqOpwU_sXH0M"
+cloud_id  = "b1g2d234d7pq5e1231kqj40q0v"
+folder_id = "b1go7234vf6l12341238g8aae7v8u"
+zone      = "ru-central1-a"
+image_id = "fd8423j2p14234u123ub648m7gomk"
+subnet_id = "e9bhhnkn32342vke1q324dem1f3"
+ssh_public = "~/.ssh/123.pub"
+private_key = "~/.ssh/123"
