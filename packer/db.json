@@ -1,0 +1,29 @@
+{
+  "builders": [
+    {
+      "type": "yandex",
+      "service_account_key_file": "/Users/imvinogradov/yandex-cloud/key.json",
+      "folder_id": "b1go7vf6l18g8aae7v8u",
+      "source_image_family": "ubuntu-1604-lts",
+      "use_ipv4_nat": "true",
+      "zone": "{{user `zone_a`}}",
+      "image_name": "reddit-db-base-{{timestamp}}",
+      "image_family": "reddit-base",
+      "ssh_username": "ubuntu",
+      "platform_id": "standard-v1"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "sudo apt update -y"
+      ]
+    },
+    {
+      "type": "shell",
+      "script": "scripts/install_mongodb.sh",
+      "execute_command": "sudo {{.Path}}"
+    }
+  ]
+}
