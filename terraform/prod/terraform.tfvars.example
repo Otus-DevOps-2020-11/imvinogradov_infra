@@ -1,0 +1,8 @@
+token     = "AgAAAAAY-ENNAATuwTmn857JSEOfqOpwU_sXH0M"
+cloud_id  = "b1g2dd7pq5e1kqj40q0v"
+folder_id = "b1go7vf6l18g8aae7v8u"
+zone      = "ru-central1-a"
+image_id = "fd8j2p14uub648m7gomk"
+subnet_id = "e9bhhnkn3vke1qdem1f3"
+ssh_public = "~/.ssh/imvinogradov.pub"
+private_key = "~/.ssh/imvinogradov"
